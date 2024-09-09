@@ -1,0 +1,12 @@
+.btn {
+    width: 174px;
+    height: 54px;
+    background-color: var(--pink-color);
+    border-radius: 38px;
+}
+
+.btn-voir-plus {
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+}

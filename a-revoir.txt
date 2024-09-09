@@ -1,0 +1,12 @@
+display flex et box box-sizing: border-box;
+box-sizing: inherit;
+display: inline-block 
+background-attachement: scroll, fixed...    
+writing mode: vertical-rl
+overflow: visible hidden scroll auto 
+caption-side    
+
+propriete des police
+les different unite de mesure utilise dans
+
+mise en forme es lien 
