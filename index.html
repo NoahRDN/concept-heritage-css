@@ -48,6 +48,10 @@
                 <li class="nav__page nav__items__3">
                     <a href="pages/enigme.html">enigme</a>
                 </li>
+
+                <li class="nav__burger">
+                    <img src="assets/img/all-page/burger-menu-svgrepo-com.svg" alt="icone burger menu">
+                </li>
             </ul>
         </nav>
     </header>
@@ -55,7 +59,7 @@
     <main>
         <section id="intro-presentation-black-panther">
             <div class="content-intro-presentation-black-panther">
-                <img class="illustration-black-panther" src="assets/img/accueil/Pantherhome1..png" alt="black panther et son acteur">
+                <img loading="lazy" class="illustration-black-panther" src="assets/img/accueil/Pantherhome1..png" alt="black panther et son acteur">
                 <section class="text-intro-presentation-black-panther">
                     <h1>black Panther</h1>
                     <h2>wakanda forever</h2>
@@ -82,7 +86,7 @@
                     </div>
                 </li>
                 <li class="presentation__personnage_list__img__2">
-                    <img src="assets/img/accueil/Pantherhome3.png" alt="KILLMONGER">
+                    <img src="assets/img/accueil/Pantherhome3.png" alt="KILLMONGER" loading="lazy">
                 </li>
                 <li class="presentation__personnage__items__2">
                     <div class="presentation__personnage__items__2__text">
@@ -93,14 +97,14 @@
                     </div>
                 </li>
                 <li class="presentation__personnage_list__img__3">
-                    <img src="assets/img/accueil/Pantherhome4.png" alt="SHURI">
+                    <img src="assets/img/accueil/Pantherhome4.png" alt="SHURI" loading="lazy">
                 </li>
             </ul>
         </section>
 
 
-        <div class="main-section container">
-            <div class="section-left">
+        <div class="main__section container">
+            <div class="main__section__left">
                 <!-- section Naissance d’un prince -->
                 <section id="naissance-prince">
                     <h2>Naissance d’un prince</h2>
@@ -159,45 +163,41 @@
                 </section>
             </div>
 
-            <div class="section-right">
+            <div class="main__section__right">
 
                 <!-- section presentation personnage -->
-                <!-- <article class="character__profile ">
-                    <img class="character__image" src="assets/img/accueil/Pantherhome5.png" alt="Acteur Black Panther">
+                <article class="character__profile ">
+                    <div class="character__profile__background"></div>
+                    <div class="character__image">
+                        <img src="assets/img/accueil/Pantherhome5.png" alt="Acteur Black Panther">
+                    </div>
 
                     <div class="character__profile_content">
-                        <div class="fiche__black__panther">
-                            <header class="character__header">
-                                <h2>T’Challa</h2>
-                                <ul>
-                                    <li>Black panther</li>
-                                    <li>Roi du Wakanda</li>
-                                    <li>En Vie</li>
-                                </ul>
-                            </header>
-
-                            <section class="character__details">
-
-                                <ul>
-                                    <li>Rôle : <span class="fiche__black__panther__valeur">Roi du Wakanda</span></li>
-                                    <li>État : <span class="fiche__black__panther__valeur">En vie</span></li>
-                                    <li>Acteur : <span class="fiche__black__panther__valeur">Chadwick Boseman</span></li>
-                                    <li>Apparition : <span class="fiche__black__panther__valeur">Captain America Civil War (2016)</span></li>
-                                    <li>Espèce : <span class="fiche__black__panther__valeur">Humain</span></li>
-                                    <li>Nationalité : <span class="fiche__black__panther__valeur">Wakandais</span></li>
-                                    <li>Sexe : <span class="fiche__black__panther__valeur">Homme</span></li>
-                                    <li>Décès : <span class="fiche__black__panther__valeur">31 mai 2018 (victime du Snap ; ressuscité par Hulk en 2023)</span></li>
-                                    <li>Réalité : <span class="fiche__black__panther__valeur">Terre-199999</span></li>
-                                </ul>
-                            </section>
+                        <div class="character__profile_content__text">
+                            <h2 class="character__profile_content__text__titre">T’Challa</h2>
+                            <ul class="character__profile_content__text__caracteristique">
+                                <li>Black panther</li>
+                                <li>Roi du Wakanda</li>
+                                <li>En Vie</li>
+                            </ul>
+                            <ul class="character__profile_content__text__description">
+                                <li>Rôle : <span class="fiche__black__panther__valeur">Roi du Wakanda</span></li>
+                                <li>État : <span class="fiche__black__panther__valeur">En vie</span></li>
+                                <li>Acteur : <span class="fiche__black__panther__valeur">Chadwick Boseman</span></li>
+                                <li>Apparition : <span class="fiche__black__panther__valeur">Captain America Civil War (2016)</span></li>
+                                <li>Espèce : <span class="fiche__black__panther__valeur">Humain</span></li>
+                                <li>Nationalité : <span class="fiche__black__panther__valeur">Wakandais</span></li>
+                                <li>Sexe : <span class="fiche__black__panther__valeur">Homme</span></li>
+                                <li>Décès : <span class="fiche__black__panther__valeur">31 mai 2018 (victime du Snap ; ressuscité par Hulk en 2023)</span></li>
+                                <li>Réalité : <span class="fiche__black__panther__valeur">Terre-199999</span></li>
+                            </ul>
                         </div>
-                        <aside id="decors-pose-black-panther">
-                            <img src="assets/img/accueil/Pantherhome6.png" alt="black panther en pose style">
-                        </aside>
                     </div>
-                </article> -->
+                </article>
 
-
+                <aside id="decors-pose-black-panther">
+                    <img src="assets/img/accueil/Pantherhome6.png" alt="black panther en pose style">
+                </aside>
             </div>
         </div>
 
@@ -253,6 +253,26 @@
         </section>
         <p class="footer__legal__info">2022 Tous droits reserves . Politique de confidentialite . Conditions d'utilisation</p>
     </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScrollTop > lastScrollTop) {
+
+                header.style.top = '-60px';
+            } else {
+
+                header.style.top = '0';
+            }
+
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+        });
+    </script>
+
 </body>
 
 </html>

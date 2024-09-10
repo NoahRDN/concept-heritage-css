@@ -10,3 +10,32 @@
     border: none;
     text-decoration: underline;
 }
+
+
+/*media query laptop L*/
+
+@media (max-width: 1700px) {}
+
+
+/*media query laptop */
+
+@media (max-width: 1350px) {}
+
+
+/*media query tablette L*/
+
+@media (max-width: 864px) {}
+
+
+/*media query tablette*/
+
+@media (max-width: 625px) {
+    .btn-voir-plus {
+        margin: 5% 0;
+    }
+}
+
+
+/*media query mobile*/
+
+@media (max-width: 425px) {}

@@ -16,7 +16,8 @@ form *,
 
 input,
 textarea {
-    width: 520px;
+    width: 100%;
+    max-width: 520px;
     height: 56px;
     border: 1px solid white;
     border-radius: 38px;
@@ -32,4 +33,28 @@ textarea {
 textarea {
     padding: 20px 30px;
     height: 300px;
+}
+
+
+/*media query laptop L*/
+
+@media (max-width: 1700px) {}
+
+
+/*media query laptop */
+
+@media (max-width: 1350px) {}
+
+
+/*media query tablette*/
+
+@media (max-width: 864px) {}
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {
+    form {
+        padding: 0 5%;
+    }
 }

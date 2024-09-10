@@ -6,10 +6,8 @@ window.addEventListener('scroll', function() {
     const formulaireOffsetTop = formulaire.offsetTop;
     const scrollPosition = window.scrollY;
 
-    // Position du haut de la fenêtre par rapport au haut du document
     const headerTopPosition = header.getBoundingClientRect().top + window.scrollY;
 
-    // Si le bas de l'élément header atteint ou dépasse le haut du formulaire, le fixe
     if (scrollPosition + headerHeight >= formulaireOffsetTop) {
         header.style.position = 'absolute';
         header.style.top = `${formulaireOffsetTop - headerHeight}px`;
@@ -17,4 +15,5 @@ window.addEventListener('scroll', function() {
         header.style.position = 'fixed';
         header.style.top = '0px';
     }
+
 });
