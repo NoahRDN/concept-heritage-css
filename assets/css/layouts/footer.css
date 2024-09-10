@@ -22,8 +22,9 @@ footer h1 {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin-bottom: 30px;
-    font-weight: lighter;
+    font-weight: normal;
     font-family: 'cantarell';
+    color: white;
 }
 
 
@@ -76,10 +77,8 @@ footer .footer__img_decorative__logo {
 .footer__reseaux__sociaux__list {
     display: flex;
     flex-direction: row;
-}
-
-.footer__reseaux__sociaux__list li {
-    margin-right: 30px;
+    justify-content: space-between;
+    max-width: 250px;
 }
 
 
@@ -99,22 +98,21 @@ footer .footer__img_decorative__logo {
 
 /*media query laptop */
 
-@media (max-width: 1350px) {}
+@media (max-width: 1350px) {
+    #footer {
+        padding: 0 5% 5%;
+        padding-top: 10%;
+    }
+}
 
 
 /*media query tablette*/
 
-@media (max-width: 864px) {}
-
-
-/*media query telephone*/
-
-@media (max-width: 625px) {
+@media (max-width: 864px) {
     #footer {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, max-content);
         gap: 0;
-        padding: 0 5%;
         text-align: center;
     }
     .footer__img_decorative__logo,
@@ -145,14 +143,14 @@ footer .footer__img_decorative__logo {
         margin-bottom: 15px;
     }
     .footer__reseaux__sociaux__list {
+        margin: 0 auto;
         margin-bottom: 15px;
         justify-content: space-between;
         align-items: center;
     }
-    .footer__reseaux__sociaux__list li {
-        margin: 0;
-    }
-    .footer__reseaux__sociaux__list li img {
-        width: 60%;
-    }
 }
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {}

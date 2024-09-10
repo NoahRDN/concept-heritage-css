@@ -16,6 +16,7 @@ form *,
 
 input,
 textarea {
+    /* width: 520px; */
     width: 100%;
     max-width: 520px;
     height: 56px;

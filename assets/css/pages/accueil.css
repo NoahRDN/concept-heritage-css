@@ -21,12 +21,11 @@
 }
 
 .text-intro-presentation-black-panther {
-    width: 55%;
     order: 1;
-    padding-right: 20px;
+    padding-right: 0;
     text-align: left;
-    margin-left: 15%;
     margin-bottom: 10%;
+    padding-top: 10%;
 }
 
 .container-intro-presentation-black-panther {
@@ -105,22 +104,26 @@
 /* main section */
 
 .main__section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10%;
 }
 
 .main__section__left {
-    grid-column: 1/2;
     margin-top: 10%;
-    margin-right: 20%;
+    width: 70%;
 }
 
 .main__section__right {
-    grid-column: 2/3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.margin-left-section {
+    margin-left: 10%;
 }
 
 
@@ -145,19 +148,14 @@
 .character__profile_content {
     grid-column: 2/3;
     grid-row: 3/4;
-    padding-bottom: 20%;
+    padding-bottom: 40%;
 }
 
 .character__profile__background {
     grid-column: 1/-1;
     grid-row: 2/-1;
     background-color: var(--white-color);
-    border-radius: 5%;
-}
-
-.character__image img {
-    border-radius: 5%;
-    max-width: 200px;
+    border-radius: 16px;
 }
 
 .character__profile_content__text {
@@ -181,7 +179,7 @@
     color: var(--white-color);
     padding: 2%;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .character__profile_content__text__description .fiche__black__panther__valeur {
@@ -204,12 +202,12 @@
 }
 
 .bloc-formulaire {
-    width: 100%;
+    width: 60vw;
     margin: 0 auto;
     padding: 50px 0;
     box-sizing: border-box;
     background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0));
-    border-radius: 30%;
+    border-radius: 250px;
 }
 
 .bloc-formulaire * {
@@ -231,7 +229,7 @@ textarea::placeholder {
 }
 
 
-/*media query laptop L*/
+/*media query laptop XL*/
 
 @media (max-width: 1700px) {
     /* section list-personnage-black-panther  */
@@ -244,9 +242,9 @@ textarea::placeholder {
 }
 
 
-/*media query laptop */
+/*media query laptop L*/
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
     /* section list-personnage-black-panther  */
     .presentation__personnage_list {
         grid-template-columns: 2% 25% 48% 25%;
@@ -268,12 +266,37 @@ textarea::placeholder {
     .character__profile_content__text__caracteristique li:last-child {
         margin: 0;
     }
+    /* main section */
+    .main__section {
+        display: flex;
+        margin-top: 10%;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5%;
+    }
+    .main__section__left {
+        margin-top: 10%;
+        width: 100%;
+    }
+}
+
+
+/*media query laptop*/
+
+@media (max-width: 1020px) {
+    .bloc-formulaire {
+        width: 70vw;
+    }
 }
 
 
 /*media query tablette L*/
 
 @media (max-width: 864px) {
+    /* presentation__personnage */
+    .margin-left-section {
+        margin-left: 5%;
+    }
     /* section list-personnage-black-panther  */
     .presentation__personnage_list {
         grid-template-columns: 3% 39% 54% 4%;
@@ -285,7 +308,7 @@ textarea::placeholder {
     }
     /* main section */
     .main__section {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
     .main__section__left,
     .main__section__right {
@@ -295,12 +318,23 @@ textarea::placeholder {
     .main__section__right {
         grid-column: 1/2;
     }
+    .bloc-formulaire {
+        width: 100%;
+        border-radius: 20vw 20vw 0 0;
+    }
 }
 
 
 /*media query tablette*/
 
 @media (max-width: 650px) {
+    /* section intro presentation black panther */
+    .illustration-black-panther {
+        display: none;
+    }
+    .text-intro-presentation-black-panther p {
+        margin-bottom: 0;
+    }
     #intro-presentation-black-panther {
         position: relative;
         z-index: 1;
@@ -319,13 +353,6 @@ textarea::placeholder {
         background-size: cover;
         opacity: 40%;
         z-index: -1;
-    }
-    /* section intro presentation black panther */
-    .illustration-black-panther {
-        display: none;
-    }
-    .text-intro-presentation-black-panther p {
-        margin-bottom: 0;
     }
     /* section list-personnage-black-panther  */
     .presentation__personnage_list {
@@ -367,7 +394,6 @@ textarea::placeholder {
     .bloc-formulaire {
         padding: 3%;
         padding-top: 27%;
-        border-radius: 20vw;
     }
 }
 

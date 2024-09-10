@@ -65,6 +65,10 @@ p {
     width: 100%;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 main p {
     text-align: justify;
     word-wrap: break-word;
@@ -94,10 +98,6 @@ main p {
     font-family: 'beyno';
 }
 
-.margin-left-section {
-    margin-left: 10%;
-}
-
 
 /*media query laptop L*/
 
@@ -106,16 +106,16 @@ main p {
 
 /*media query laptop */
 
-@media (max-width: 1350px) {
-    .container {
-        padding: 0rem 4rem;
-    }
-}
+@media (max-width: 1350px) {}
 
 
 /*media query tablette*/
 
-@media (max-width: 864px) {}
+@media (max-width: 864px) {
+    .container {
+        padding: 0rem 10%;
+    }
+}
 
 
 /*media query telephone*/
