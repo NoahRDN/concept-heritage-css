@@ -100,6 +100,19 @@
     margin: 5%;
 }
 
+.chevron__right {
+    grid-column: 6;
+    grid-row: 2;
+    align-self: center;
+    max-width: 50px;
+    justify-self: end;
+    margin-right: 5%;
+}
+
+.chevron__left {
+    display: none;
+}
+
 
 /* main section */
 
@@ -253,6 +266,9 @@ textarea::placeholder {
     .presentation__personnage__items__2__text {
         display: none;
     }
+    .chevron__right {
+        grid-column: 4;
+    }
     /* section intro-presentation-black-panther */
     .character__profile_content__text__caracteristique {
         flex-direction: column;
@@ -356,7 +372,7 @@ textarea::placeholder {
     }
     /* section list-personnage-black-panther  */
     .presentation__personnage_list {
-        grid-template-columns: 5% 10% 50% 10% 5%;
+        grid-template-columns: 10% 10% 50% 10% 10%;
         grid-template-rows: 5% max-content max-content;
         justify-content: center;
     }
@@ -375,6 +391,7 @@ textarea::placeholder {
     }
     .presentation__personnage_list__background__color {
         grid-row: 2/-1;
+        grid-column: 2/5;
     }
     .presentation__personnage_list__img__1 {
         justify-self: center;
@@ -384,6 +401,22 @@ textarea::placeholder {
     }
     #presentation__personnage {
         margin: 0 5% 10%;
+    }
+    .chevron__left {
+        display: block;
+        grid-column: 1;
+        grid-row: 1/-1;
+        align-self: center;
+        justify-self: center;
+        margin: 0 10%;
+        rotate: 180deg;
+    }
+    .chevron__right {
+        grid-column: 5;
+        grid-row: 1/-1;
+        align-self: center;
+        justify-self: center;
+        margin: 0 10%;
     }
     /* section intro-presentation-black-panther */
     .text-intro-presentation-black-panther {

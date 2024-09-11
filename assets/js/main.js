@@ -45,7 +45,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Ajoute un événement au clic sur le bouton burger
     burgerBtn.addEventListener('click', function() {
-        // Basculer la classe active sur le menu
+
         menuOverlay.classList.toggle('active');
     });
+});
+
+// function bouton play et pause video
+const video = document.getElementById('myVideo');
+const playButton = document.getElementById('playButton');
+
+playButton.addEventListener('click', function() {
+    if (video.paused) {
+        video.play();
+        playButton.style.display = 'none';
+    }
+});
+
+video.addEventListener('pause', function() {
+    playButton.style.display = 'block';
+});
+
+video.addEventListener('play', function() {
+    playButton.style.display = 'none';
 });
