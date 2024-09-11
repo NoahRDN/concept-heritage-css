@@ -1,8 +1,8 @@
 @import url('variables.css');
 @import url('font.css');
+@import url('../components/animations.css');
 @import url('../layouts/header.css');
 @import url('../layouts/footer.css');
-@import url('../responsive/base/style-responsive.css');
 * {
     color: var(--white-color);
     margin: 0;
@@ -34,7 +34,7 @@ a {
 }
 
 .container {
-    padding: 0rem 15%;
+    padding: 0rem 12%
 }
 
 h1 {

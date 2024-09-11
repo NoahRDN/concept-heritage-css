@@ -12,23 +12,37 @@
 </head>
 
 <body>
-    <header class="container">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html"><img src="../assets/img/all-page/footer2.png" alt="logo sayna et marvel"></a>
+    <header class="header">
+        <nav id="nav">
+            <ul class="list__nav">
+                <li class="nav__logo">
+                    <a href="../index.html"><img class="logo_website" src="../assets/img/all-page/footer2.png" alt="logo sayna et marvel"></a>
                 </li>
-                <li>
+                <li class="nav__page">
                     <a href="../index.html">Accueil</a>
                 </li>
-                <li>
-                    <a href="wakanda.html">wakanda</a>
+                <li class="nav__page">
+                    <a href="pages/wakanda.html">Wakanda</a>
                 </li>
-                <li>
-                    <a class="page-actuelle" href="enigme.html">enigme</a>
+                <li class="nav__page nav__items__3">
+                    <a class="page-actuelle" href="pages/enigme.html">Énigme</a>
+                </li>
+
+                <!-- Bouton burger -->
+                <li class="nav__burger">
+                    <img id="burger-btn" src="../assets/img/all-page/burger-menu-svgrepo-com.svg" alt="icone burger menu">
                 </li>
             </ul>
         </nav>
+
+        <!-- Bloc couvrant la page (caché au début) -->
+        <div id="fullpage-menu" class="menu-overlay">
+            <div class="menu-content">
+                <a href="../index.html">Accueil</a>
+                <a href="pages/wakanda.html">Wakanda</a>
+                <a class="page-actuelle" href="pages/enigme.html">Énigme</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -127,6 +141,8 @@
         </section>
         <p class="footer__legal__info">2022 Tous droits reserves . Politique de confidentialite . Conditions d'utilisation</p>
     </footer>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

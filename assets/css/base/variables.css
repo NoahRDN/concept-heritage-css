@@ -33,10 +33,7 @@
     }
 }
 
-
-/*media query tablet*/
-
-@media (max-width: 864px) {
+@media (max-width: 1024px) {
      :root {
         --size-h1: 2.5rem;
         --size-h2-beyno: 1.75rem;
@@ -46,9 +43,9 @@
 }
 
 
-/*media query telephone*/
+/*media query tablet*/
 
-@media (max-width: 625px) {
+@media (max-width: 864px) {
      :root {
         --size-h1: 2rem;
         --size-h2-beyno: 1.5rem;
@@ -56,3 +53,8 @@
         --size-texte-enigme: 1.75rem;
     }
 }
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {}

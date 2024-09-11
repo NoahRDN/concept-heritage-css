@@ -15,45 +15,36 @@
 <body>
 
     <header class="header">
-        <div class="header__reseau__sociaux">
-            <div class="header__reseau__sociaux_ligne_1"></div>
-            <div class="header__reseau__sociaux_ligne_2"></div>
-            <ul class="header__reseau__sociaux__list">
-                <li class="header__reseau__sociaux__list__items__1">
-                    <a href="#"><img src="assets/img/all-page/icon_facebook.png" alt="icone facebook"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/img/all-page/icon_instagram.png" alt="icone instagram"></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/img/all-page/icon_twitter.png" alt="icone twitter"></a>
-                </li>
-                <li class="header__reseau__sociaux__list__items__4">
-                    <a href="#"><img src="assets/img/all-page/icon_tiktok.png" alt="icone tik tok"></a>
-                </li>
-            </ul>
-        </div>
-
         <nav id="nav">
             <ul class="list__nav">
                 <li class="nav__logo">
-                    <a href="index.html"><img class="logo_website" src="assets/img/all-page/footer2.png" alt="logo sayna et marvel"></a>
+                    <a class="page-actuelle" href="index.html"><img class="logo_website" src="assets/img/all-page/footer2.png" alt="logo sayna et marvel"></a>
                 </li>
                 <li class="nav__page">
-                    <a class="page-actuelle" href="index.html">Accueil</a>
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li class="nav__page">
-                    <a href="pages/wakanda.html">wakanda</a>
+                    <a href="pages/wakanda.html">Wakanda</a>
                 </li>
                 <li class="nav__page nav__items__3">
-                    <a href="pages/enigme.html">enigme</a>
+                    <a href="pages/enigme.html">Énigme</a>
                 </li>
 
+                <!-- Bouton burger -->
                 <li class="nav__burger">
-                    <img src="assets/img/all-page/burger-menu-svgrepo-com.svg" alt="icone burger menu">
+                    <img id="burger-btn" src="assets/img/all-page/burger-menu-svgrepo-com.svg" alt="icone burger menu">
                 </li>
             </ul>
         </nav>
+
+        <!-- Bloc couvrant la page (caché au début) -->
+        <div id="fullpage-menu" class="menu-overlay">
+            <div class="menu-content">
+                <a class="page-actuelle" href="index.html">Accueil</a>
+                <a href="pages/wakanda.html">Wakanda</a>
+                <a href="pages/enigme.html">Énigme</a>
+            </div>
+        </div>
     </header>
 
     <main>
