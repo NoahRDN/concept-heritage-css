@@ -7,48 +7,57 @@ h3 {
 
 /*  */
 
-#challenge-section .content-paragraphe {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-}
-
-#challenge-section .circle-image {
+.circle-image {
     width: 100%;
     display: block;
+    height: 100%;
+    object-fit: cover;
+    max-width: 900px;
+    max-height: 500px;
 }
 
 #challenge-section .content-paragraphe p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: justify;
-    padding: 10px;
-    width: 60%;
+}
+
+.text-challenge-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr;
+    justify-items: end;
 }
 
 .titre-challenge-section {
     width: 80%;
-    margin-bottom: 100px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
-.content-challenge-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    position: absolute;
-    bottom: 0;
-    right: 180px;
+.content-paragraphe {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.text-challenge-section {
-    width: 70%;
+.circle-image,
+.challenge__section__texte {
+    grid-area: 1/1;
+}
+
+.challenge__section__texte,
+.questionnement__text {
+    justify-self: center;
+    padding: 124px 10px;
+    max-width: 600px;
 }
 
 .img-content-challenge-section {
     position: relative;
     width: 65%;
+    display: none;
 }
 
 .container-challenge-section {
@@ -65,7 +74,7 @@ h3 {
 
 .citation-avec-font-enigmatique {
     width: 70%;
-    margin: 100px 0;
+    margin: 10% 0;
 }
 
 
@@ -126,6 +135,7 @@ h3 {
     grid-row: 2/3;
     align-self: start;
     justify-self: start;
+    width: 100%;
 }
 
 .questionnement__text {
@@ -142,4 +152,57 @@ h3 {
 
 .titre-questionnement {
     margin-bottom: 10px;
+}
+
+
+/*media query laptop L*/
+
+@media (max-width: 1700px) {}
+
+
+/*media query laptop */
+
+@media (max-width: 1350px) {}
+
+
+/*media query tablette*/
+
+@media (max-width: 864px) {
+    .content-challenge-section {
+        padding: 0;
+        padding-top: 10%;
+    }
+    .text-challenge-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*media query telephone*/
+
+@media (max-width: 625px) {
+    .titre-challenge-section {
+        padding: 0rem 1.5rem;
+        width: 100%;
+    }
+    .challenge__section__texte,
+    .questionnement__text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        width: 100%;
+    }
+    .citation-avec-font-enigmatique {
+        width: 100%;
+    }
+    #transcription-questionnement {
+        display: flex;
+        flex-direction: column;
+    }
+    #questionnement {
+        width: 100%;
+    }
+    .content-questionnement {
+        margin-bottom: 0;
+    }
 }
