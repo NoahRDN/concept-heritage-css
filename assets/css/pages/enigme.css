@@ -101,8 +101,9 @@ h3 {
 
 #transcription-questionnement {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
 }
 
 #transcription-alphabet {
@@ -172,10 +173,41 @@ h3 {
 /*media query laptop */
 
 @media (max-width: 1440px) {
+    .text-challenge-section {
+        width: 60%;
+    }
+    .content-challenge-section {
+        padding: 0;
+        padding-top: 10%;
+    }
+}
+
+
+/*media query laptop*/
+
+@media (max-width: 1020px) {
+    .text-challenge-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-challenge-section,
+    #transcription-questionnement {
+        padding: 0rem 3rem;
+    }
+}
+
+
+/*media query tablette*/
+
+@media (max-width: 864px) {
+    .text-challenge-section {
+        width: 100%;
+    }
     #transcription-questionnement {
         display: flex;
         flex-direction: column;
         justify-self: center;
+        padding: 0;
     }
     .content-questionnement {
         margin-bottom: 0;
@@ -201,33 +233,6 @@ h3 {
     .content-challenge-section {
         justify-content: center;
     }
-}
-
-
-/*media query laptop*/
-
-@media (max-width: 1020px) {
-    .content-challenge-section {
-        padding: 0;
-        padding-top: 10%;
-    }
-    .text-challenge-section {
-        display: flex;
-        flex-direction: column;
-    }
-    .container-challenge-section,
-    #transcription-questionnement {
-        padding: 0;
-    }
-    #transcription-alphabet {
-        padding: 0rem 12%;
-    }
-}
-
-
-/*media query tablette*/
-
-@media (max-width: 864px) {
     .content-challenge-section {
         padding: 0;
         padding-top: 10%;
@@ -239,6 +244,10 @@ h3 {
     .titre-challenge-section {
         padding: 0rem 1.5rem;
         width: 100%;
+    }
+    #transcription-alphabet,
+    .citation-avec-font-enigmatique {
+        padding: 0rem 3rem;
     }
 }
 
@@ -274,5 +283,14 @@ h3 {
         height: 100%;
         width: 100%;
         object-fit: cover;
+    }
+    .img-content-challenge-section {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #transcription-alphabet,
+    .citation-avec-font-enigmatique {
+        padding: 0rem 1.5rem;
     }
 }

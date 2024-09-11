@@ -142,4 +142,11 @@
         opacity: 50%;
         z-index: -1;
     }
+    .intro__presentation__black__panther__text {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .origines {
+        padding-top: 10%;
+    }
 }
