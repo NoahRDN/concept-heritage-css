@@ -42,17 +42,10 @@ window.addEventListener('scroll', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const burgerBtn = document.getElementById('burger-btn');
     const menuOverlay = document.getElementById('fullpage-menu');
-    let isMenuOpen = false;
 
+    // Ajoute un événement au clic sur le bouton burger
     burgerBtn.addEventListener('click', function() {
+        // Basculer la classe active sur le menu
         menuOverlay.classList.toggle('active');
-
-        if (!isMenuOpen) {
-            burgerBtn.src = '/assets/img/all-page/cross-svgrepo-com.svg';
-        } else {
-            burgerBtn.src = '/assets/img/all-page/burger-menu-svgrepo-com.svg';
-        }
-
-        isMenuOpen = !isMenuOpen;
     });
 });
