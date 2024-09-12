@@ -288,11 +288,19 @@ textarea::placeholder {
         margin-top: 10%;
         flex-direction: row;
         justify-content: space-between;
-        gap: 5%;
+        gap: 10%;
     }
     .main__section__left {
         margin-top: 10%;
-        width: 100%;
+        width: 70%;
+    }
+    .main__section__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .margin-left-section {
+        margin-left: 10%;
     }
 }
 
@@ -330,6 +338,7 @@ textarea::placeholder {
     .main__section__right {
         margin: 0;
         padding: 0;
+        width: 100%;
     }
     .main__section__right {
         grid-column: 1/2;
@@ -337,6 +346,15 @@ textarea::placeholder {
     .bloc-formulaire {
         width: 100%;
         border-radius: 20vw 20vw 0 0;
+    }
+    /* right section */
+    .main__section__right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #decors-pose-black-panther {
+        align-self: flex-end;
     }
 }
 

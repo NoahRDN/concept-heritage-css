@@ -59,7 +59,7 @@ footer h1 {
     display: grid;
 }
 
-.img__cercle_violet img {
+.img__cercle_violet__logo {
     grid-area: 1/1;
     display: block;
     z-index: 1;
@@ -196,18 +196,12 @@ footer h1 {
 
 /* animation */
 
-.footer__reseaux__sociaux__list {
-    transition: transform 0.3s ease;
-}
-
-.footer__reseaux__sociaux__list li:hover {
-    transform: scale(1.1);
-}
-
+.footer__reseaux__sociaux__list li,
 .img__cercle_violet {
     transition: transform 0.3s ease;
 }
 
+.footer__reseaux__sociaux__list li:hover,
 .img__cercle_violet:hover {
     transform: scale(1.1);
 }
