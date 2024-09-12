@@ -409,7 +409,6 @@ textarea::placeholder {
         align-self: center;
         justify-self: center;
         margin: 0 10%;
-        rotate: 180deg;
     }
     .chevron__right {
         grid-column: 5;

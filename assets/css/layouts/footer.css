@@ -28,25 +28,60 @@ footer h1 {
 }
 
 
-/* footer image */
+/* footer trois cercle logo*/
 
-footer .footer__img_decorative__logo {
-    grid-column: 1;
-    grid-row: 1 / 2;
+.footer__trois__cercle__logo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1.25fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr 1.25fr 1fr;
+    width: 300px;
+    height: 300px;
 }
 
-.footer__img_decorative__logo {
-    display: grid;
-    place-items: center;
+.cercle {
+    border-radius: 50%;
+}
+
+.cercle__blue {
     width: 100%;
     height: 100%;
-    justify-content: start;
+    background-color: #003399;
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
-.footer__img__decorative,
-.footer__img__logo {
-    grid-area: 1 / 1;
-    width: auto;
+.img__cercle_violet {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.img__cercle_violet img {
+    grid-area: 1/1;
+    display: block;
+    z-index: 1;
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+}
+
+.cercle__violet {
+    width: 100%;
+    height: 100%;
+    background-color: #d49ffb;
+    grid-area: 1/1;
+    opacity: 0.6;
+}
+
+.cercle__rose {
+    width: 100%;
+    height: 100%;
+    background-color: #f0a7f5;
+    grid-column: 4/6;
+    grid-row: 4/6;
 }
 
 
@@ -128,7 +163,7 @@ footer .footer__img_decorative__logo {
     .footer__pages {
         grid-row: 2/3;
         padding-top: 15px;
-        text-align: start;
+        text-align: center;
         padding-left: 3%;
     }
     #footer h1 {
@@ -148,9 +183,31 @@ footer .footer__img_decorative__logo {
         justify-content: space-between;
         align-items: center;
     }
+    .footer__trois__cercle__logo {
+        justify-self: center;
+    }
 }
 
 
 /*media query telephone*/
 
 @media (max-width: 625px) {}
+
+
+/* animation */
+
+.footer__reseaux__sociaux__list {
+    transition: transform 0.3s ease;
+}
+
+.footer__reseaux__sociaux__list li:hover {
+    transform: scale(1.1);
+}
+
+.img__cercle_violet {
+    transition: transform 0.3s ease;
+}
+
+.img__cercle_violet:hover {
+    transform: scale(1.1);
+}

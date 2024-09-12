@@ -1,4 +1,32 @@
+/* Animation fade in avec slide from left */
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-slide {
+    opacity: 0;
+    animation: fadeInSlide 1s ease-out forwards;
+}
+
+
+/* header.html lien de navigation */
+
 .list__nav a:hover {
     color: white;
+    text-decoration: underline;
+}
+
+
+/* index.html lien footer*/
+
+.footer__pages__list a:hover {
     text-decoration: underline;
 }

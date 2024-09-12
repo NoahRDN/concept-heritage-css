@@ -12,6 +12,21 @@
 }
 
 
+/* Style initial du bouton */
+
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* Effet hover (survol) */
+
+.btn:hover {
+    box-shadow: 0 0 10px 2px var(--pink-color);
+}
+
+
 /*media query laptop L*/
 
 @media (max-width: 1700px) {}
